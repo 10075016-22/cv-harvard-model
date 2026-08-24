@@ -1,0 +1,244 @@
+{
+    "personalInfo": {
+        "name": "Santiago Enoc López Lázaro",
+        "title": "Systems Engineer",
+        "email": "sell3.1998@hotmail.com",
+        "phone": "+573002750183",
+        "location": "Montería, Colombia",
+        "linkedin": "https://www.linkedin.com/in/santiago-lopez-06812410a",
+        "website": "https://thiago-lopez.vercel.app"
+    },
+    "profile": "I am a Systems Engineer with an interest in innovation and continuous development of my skills. I am motivated to face challenges and find effective solutions through technology. Outside of work, I enjoy outdoor activities, spending time with my close circle, and motorcycle trips, experiences that drive me to maintain a balance between personal and professional life.",
+    "education": [
+        {
+            "institution": "Universidad de Córdoba",
+            "degree": "Systems Engineering",
+            "startDate": "2015-02",
+            "endDate": "2021-02",
+            "location": "Montería, Córdoba, Colombia",
+            "description": "Systems Engineer trained at Universidad de Córdoba, with capabilities to perform in various organizational contexts in both public and private sectors."
+        }
+    ],
+    "experience": [
+        {
+            "company": "Homepower SAS",
+            "position": "Semi-Senior Frontend Developer",
+            "startDate": "2025-11",
+            "endDate": "",
+            "isCurrent": true,
+            "description": "Semi-senior frontend developer, mainly responsible for creating UI component library for internal company use. Development of new features and user stories within company applications.",
+            "location": "Medellín, Colombia"
+        },
+        {
+            "company": "Techboss SAS",
+            "position": "FullStack Developer",
+            "startDate": "2022-09",
+            "endDate": "2025-07",
+            "isCurrent": false,
+            "description": "Fullstack developer specialized in Vue Js v2 and v3, Typescript, Slim (PHP) and Node Js. Responsible for design and implementation of new features in Guvi (Security camera control and monitoring system), integration with WebSocket, WebRTC, Vee‑Validate and MQTT; distributed architecture with NFS; migration of control center from Vue Js 2 to Vue Js 3, SQL query optimization, Redis integration using AWS ElastiCache, MQTT; deployments on AWS (EC2). Visual redesign of main product SEIF. Angular version 18+, Nx for monorepo management, StencilJs, Vitest, Jest and Typescript.",
+            "location": "Remote, Colombia"
+        },
+        {
+            "company": "Sipremcol",
+            "position": "Development Engineer",
+            "startDate": "2021-09",
+            "endDate": "2022-09",
+            "isCurrent": false,
+            "description": "Frontend leader, development of web systems (Siprem GD, Lavado y Poda) for work order control for clients such as Air‑e; development with PHP, Vue Js, Node Js and MySQL.",
+            "location": "Montería, Colombia"
+        },
+        {
+            "company": "Graphic Market Company",
+            "position": "Backend Developer",
+            "startDate": "2021-08",
+            "endDate": "2021-10",
+            "isCurrent": false,
+            "description": "Backend feature development in Node Js; frontend plugins for Twill CMS using Vue Js and Typescript.",
+            "location": "Remote, Colombia"
+        },
+        {
+            "company": "Inxait Corp",
+            "position": "Backend Developer Jr",
+            "startDate": "2020-12",
+            "endDate": "2021-06",
+            "isCurrent": false,
+            "description": "Creation of HTML pieces for email marketing (Massiv, Mailgun), backend features with Laravel; frontend maintenance with Vue Js v2; creation of advertising pieces with Adobe Illustrator and HTML.",
+            "location": "Remote, Colombia"
+        },
+        {
+            "company": "Intelligent Electronic Solutions",
+            "position": "Software Developer",
+            "startDate": "2020-04",
+            "endDate": "2021-03",
+            "isCurrent": false,
+            "description": "Redesign of existing web views to improve UX and usability using Java, Spring Boot and Angular.",
+            "location": "Medellín, Colombia"
+        },
+        {
+            "company": "SSTEC",
+            "position": "Software Developer",
+            "startDate": "2020-01",
+            "endDate": "2020-03",
+            "isCurrent": false,
+            "description": "Frontend programming and API integration for web systems using JavaScript, Node Js, Electron.",
+            "location": "Bogotá, Colombia"
+        },
+        {
+            "company": "Inversiones GERA SAS",
+            "position": "Web Developer",
+            "startDate": "2019-07",
+            "endDate": "2019-12",
+            "isCurrent": false,
+            "description": "Internal process automation and IT support, development with Java desktop and Vue Js with PHP.",
+            "location": "Montería, Colombia"
+        }
+    ],
+    "skills": [
+        {
+            "category": "Backend Development",
+            "items": [
+                "PHP",
+                "Node Js",
+                "Express",
+                "Java",
+                "Python",
+                "C++",
+                "Laravel",
+                "Slim",
+                "Spring Boot"
+            ]
+        },
+        {
+            "category": "Frontend Development",
+            "items": [
+                "Vue Js",
+                "Vuex",
+                "Vue Router",
+                "Vue I18n",
+                "Vue Test Utils",
+                "Pinia",
+                "VeeValidate",
+                "Angular",
+                "React",
+                "Typescript",
+                "StencilJs",
+                "Nx",
+                "Vitest"
+            ]
+        },
+        {
+            "category": "Database",
+            "items": [
+                "MySQL",
+                "PostgreSQL",
+                "MongoDB",
+                "Redis",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "category": "Cloud AWS",
+            "items": [
+                "EC2",
+                "S3",
+                "RDS",
+                "CloudFront",
+                "Route 53",
+                "CloudWatch",
+                "ElastiCache",
+                "EFS"
+            ]
+        },
+        {
+            "category": "Others",
+            "items": [
+                "Git",
+                "Docker",
+                "Linux",
+                "Asterisk",
+                "MQTT",
+                "Web RTSP",
+                "WebSocket",
+                "Figma",
+                "Adobe Illustrator",
+                "Adobe Photoshop"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "level": "Native"
+        },
+        {
+            "language": "English",
+            "level": "A2"
+        }
+    ],
+    "complementary": [
+        {
+            "title": "Angular de cero a experto",
+            "institution": "Udemy",
+            "startDate": "2026-01",
+            "endDate": "2026-01",
+            "isCurrent": false,
+            "type": "Course"
+        },
+        {
+            "title": "Software Engineer Certificate",
+            "institution": "Hackerrank",
+            "startDate": "2025-08",
+            "endDate": "2025-08",
+            "isCurrent": false,
+            "type": "Certification"
+        },
+        {
+            "title": "English Course",
+            "institution": "Instituto Tecnológico San Agustín",
+            "startDate": "2025-02",
+            "endDate": "",
+            "isCurrent": true,
+            "type": "Course"
+        },
+        {
+            "title": "Diploma in Marketing Management",
+            "institution": "Politécnico de Colombia",
+            "startDate": "2024-12",
+            "endDate": "",
+            "isCurrent": false,
+            "type": "Diploma"
+        },
+        {
+            "title": "AWS Certified Cloud Practitioner",
+            "institution": "Amazon Web Services",
+            "startDate": "2022-11",
+            "endDate": "2022-11",
+            "isCurrent": false,
+            "type": "Certification"
+        },
+        {
+            "title": "AWS Learning: Object Storage",
+            "institution": "Amazon Web Services",
+            "startDate": "2022-11",
+            "endDate": "2022-11",
+            "isCurrent": false,
+            "type": "Certification"
+        },
+        {
+            "title": "AWS Learning: File Storage",
+            "institution": "Amazon Web Services",
+            "startDate": "2022-11",
+            "endDate": "2022-11",
+            "isCurrent": false,
+            "type": "Certification"
+        },
+        {
+            "title": "Cloud Computing",
+            "institution": "Google Cloud",
+            "startDate": "2022-08",
+            "endDate": "2022-08",
+            "isCurrent": false,
+            "type": "Certification"
+        }
+    ]
+}

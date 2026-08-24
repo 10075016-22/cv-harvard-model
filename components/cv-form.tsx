@@ -17,6 +17,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
 import { PlusCircle, Trash2, ArrowUp } from "lucide-react";
 
+// import Thiago from '@/components/ThiagoEn.json'
+// import Thiago from '@/components/Thiago.json'
+
 const formSchema = z.object({
   personalInfo: z.object({
     name: z.string().min(1, "El nombre es requerido"),
@@ -72,6 +75,8 @@ const formSchema = z.object({
 });
 
 export type CVData = z.infer<typeof formSchema>;
+
+
 
 export function CVForm({ onSubmit, initialData }: { onSubmit: (data: CVData) => void; initialData?: CVData }) {
   const form = useForm<CVData>({
