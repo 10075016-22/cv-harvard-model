@@ -1,0 +1,13 @@
+{
+  "lastQuery": "listo, gracias :)",
+  "perAgentQuery": {},
+  "graftReads": 0,
+  "sourceReads": 6,
+  "savedTokens": 0,
+  "injectedPointers": [],
+  "nudges": 0,
+  "host": "claude-code",
+  "inputCostMicros": 3016924,
+  "inputTokensBilled": 4264920,
+  "lastBillingUuid": "cf219ad0-b2e0-4bfa-9eeb-c7e4464af04f"
+}

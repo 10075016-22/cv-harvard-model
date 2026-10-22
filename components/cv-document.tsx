@@ -181,11 +181,12 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     marginRight: 10,
   },
+  skillLine: {
+    marginBottom: 2,
+  },
   skillName: {
     fontSize: 10,
     fontFamily: 'Times-Bold',
-    marginBottom: 3,
-    lineHeight: 1.2,
   },
   skillLevel: {
     fontSize: 10,
@@ -206,14 +207,43 @@ const styles = StyleSheet.create({
   },
 });
 
+const labels = {
+  es: {
+    dateLocale: 'es-ES',
+    present: 'Presente',
+    links: 'LINKS',
+    profile: 'PERFIL PROFESIONAL',
+    experience: 'EXPERIENCIA LABORAL',
+    education: 'FORMACIÓN',
+    skills: 'COMPETENCIAS',
+    complementary: 'COMPLEMENTARIOS',
+    languages: 'IDIOMAS',
+  },
+  en: {
+    dateLocale: 'en-US',
+    present: 'Present',
+    links: 'LINKS',
+    profile: 'PROFESSIONAL SUMMARY',
+    experience: 'WORK EXPERIENCE',
+    education: 'EDUCATION',
+    skills: 'SKILLS',
+    complementary: 'CERTIFICATIONS & COURSES',
+    languages: 'LANGUAGES',
+  },
+};
+
+const displayUrl = (url: string) => url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+
 export function CVDocument({ data }: { data: CVData }) {
+  const t = labels[data.locale === 'en' ? 'en' : 'es'];
+
   const formatDate = (dateString: string) => {
     if (!dateString) return "";
     // Crear la fecha usando UTC para evitar problemas de zona horaria
     const [year, month] = dateString.split('-');
     const date = new Date(Date.UTC(parseInt(year), parseInt(month) - 1, 1));
     
-    return date.toLocaleDateString('es-ES', { 
+    return date.toLocaleDateString(t.dateLocale, { 
       year: 'numeric', 
       month: 'long',
       timeZone: 'UTC' // Forzar UTC
@@ -233,16 +263,18 @@ export function CVDocument({ data }: { data: CVData }) {
 
         {/* Links */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>LINKS</Text>
+          <Text style={styles.sectionTitle}>{t.links}</Text>
           <View style={styles.linksContainer}>
-            <Link src={data.personalInfo.linkedin}>
-              <Text style={styles.linkText}>LinkedIn</Text>
-            </Link>
+            {data.personalInfo.linkedin && (
+              <Link src={data.personalInfo.linkedin}>
+                <Text style={styles.linkText}>{displayUrl(data.personalInfo.linkedin)}</Text>
+              </Link>
+            )}
             {data.personalInfo.website && (
               <>
                 <Text style={styles.linkSeparator}> • </Text>
                 <Link src={data.personalInfo.website}>
-                  <Text style={styles.linkText}>Sitio Web</Text>
+                  <Text style={styles.linkText}>{displayUrl(data.personalInfo.website)}</Text>
                 </Link>
               </>
             )}
@@ -251,18 +283,18 @@ export function CVDocument({ data }: { data: CVData }) {
 
         {/* Profile */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>PERFIL PROFESIONAL</Text>
+          <Text style={styles.sectionTitle}>{t.profile}</Text>
           <Text style={styles.description}>{data.profile}</Text>
         </View>
 
         {/* Experience */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>EXPERIENCIA LABORAL</Text>
+          <Text style={styles.sectionTitle}>{t.experience}</Text>
           {data.experience.map((exp, index) => (
-            <View key={index} style={styles.experienceContainer}>
+            <View key={index} style={styles.experienceContainer} wrap={false}>
               <View style={styles.dateLocation}>
                 <Text style={styles.dates}>
-                  {formatDate(exp.startDate)} — {exp.isCurrent ? "Presente" : formatDate(exp.endDate || "")}
+                  {formatDate(exp.startDate)} — {exp.isCurrent ? t.present : formatDate(exp.endDate || "")}
                 </Text>
                 <Text style={styles.location}>{exp.location}</Text>
               </View>
@@ -270,7 +302,7 @@ export function CVDocument({ data }: { data: CVData }) {
                 <Text style={styles.jobTitle}>{exp.position}, {exp.company}</Text>
                 <View style={styles.bulletPoints}>
                   {exp.description.split('\n').map((point, i) => (
-                    <View key={i} style={styles.bulletPoint}>
+                    <View key={i} style={styles.bulletPoint} wrap={false}>
                       <Text style={styles.bullet}>•</Text>
                       <Text style={styles.bulletText}>
                         {point.trim().replace(/^• /, '').replace(/^• • /, '•')}
@@ -285,7 +317,7 @@ export function CVDocument({ data }: { data: CVData }) {
 
         {/* Education */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>FORMACIÓN</Text>
+          <Text style={styles.sectionTitle}>{t.education}</Text>
           {data.education.map((edu, index) => (
             <View key={index} style={styles.educationContainer}>
               <View style={styles.dateLocation}>
@@ -307,25 +339,23 @@ export function CVDocument({ data }: { data: CVData }) {
 
         {/* Skills */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>COMPETENCIAS</Text>
-          <View style={styles.skillsGrid}>
-            {data.skills.map((skill, index) => (
-              <View key={index} style={styles.skillRow}>
-                <Text style={styles.skillName}>{skill.category}</Text>
-                <Text style={styles.skillLevel}>{skill.items.join(", ")}</Text>
-              </View>
-            ))}
-          </View>
+          <Text style={styles.sectionTitle}>{t.skills}</Text>
+          {data.skills.map((skill, index) => (
+            <Text key={index} style={styles.skillLine}>
+              <Text style={styles.skillName}>{skill.category}: </Text>
+              <Text style={styles.skillLevel}>{skill.items.join(", ")}</Text>
+            </Text>
+          ))}
         </View>
 
         {/* Complementary */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>COMPLEMENTARIOS</Text>
+          <Text style={styles.sectionTitle}>{t.complementary}</Text>
           {data.complementary.map((item, index) => (
-            <View key={index} style={styles.complementaryContainer}>
+            <View key={index} style={styles.complementaryContainer} wrap={false}>
               <View style={styles.dateLocation}>
                 <Text style={styles.dates}>
-                  {formatDate(item.startDate)} {item.isCurrent ? "- Presente" : item.endDate ? `- ${formatDate(item.endDate)}` : ""}
+                  {formatDate(item.startDate)} {item.isCurrent ? `- ${t.present}` : item.endDate && item.endDate !== item.startDate ? `- ${formatDate(item.endDate)}` : ""}
                 </Text>
               </View>
               <View style={styles.complementaryContent}>
@@ -339,7 +369,7 @@ export function CVDocument({ data }: { data: CVData }) {
 
         {/* Languages */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>IDIOMAS</Text>
+          <Text style={styles.sectionTitle}>{t.languages}</Text>
           {data.languages.map((lang, index) => (
             <View key={index} style={styles.languageRow}>
               <Text style={styles.languageName}>{lang.language}</Text>

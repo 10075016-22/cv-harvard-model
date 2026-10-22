@@ -1,32 +1,41 @@
 {
+    "locale": "en",
     "personalInfo": {
         "name": "Santiago Enoc López Lázaro",
-        "title": "Systems Engineer",
+        "title": "Software Engineer",
         "email": "sell3.1998@hotmail.com",
-        "phone": "+573002750183",
-        "location": "Montería, Colombia",
+        "phone": "+57 300 275 0183",
+        "location": "Medellín, Colombia",
         "linkedin": "https://www.linkedin.com/in/santiago-lopez-06812410a",
         "website": "https://thiago-lopez.vercel.app"
     },
-    "profile": "I am a Systems Engineer with an interest in innovation and continuous development of my skills. I am motivated to face challenges and find effective solutions through technology. Outside of work, I enjoy outdoor activities, spending time with my close circle, and motorcycle trips, experiences that drive me to maintain a balance between personal and professional life.",
+    "profile": "Systems Engineer with 7+ years of experience building web and mobile applications. Currently developing the iOS and Android apps (React Native, Swift) and the web platform (React, Python/FastAPI) of a sports video product, with prior full-stack experience in Vue.js, Angular, TypeScript, Node.js, PHP and AWS. Focused on shipping reliable features end to end, from business logic to UI details, and on keeping web and mobile in parity.",
     "education": [
         {
             "institution": "Universidad de Córdoba",
             "degree": "Systems Engineering",
             "startDate": "2015-02",
             "endDate": "2021-02",
-            "location": "Montería, Córdoba, Colombia",
-            "description": "Systems Engineer trained at Universidad de Córdoba, with capabilities to perform in various organizational contexts in both public and private sectors."
+            "location": "Montería, Córdoba, Colombia"
         }
     ],
     "experience": [
         {
+            "company": "Taggley Network Inc.",
+            "position": "Software Engineer",
+            "startDate": "2026-02",
+            "endDate": "",
+            "isCurrent": true,
+            "description": "Develop and maintain the iOS and Android apps of a youth sports video platform using React Native, TypeScript and Swift.\nBuilt video review and voiceover features: drawing annotations synced to the video frame, audio recording, clip playback and seeking, and voiceovers combining multiple clips.\nImproved large video uploads with multipart transfers, per-clip progress, retries, recovery of stalled transfers and background uploads with iOS Live Activities.\nImplemented App Store subscription and billing flows, and improved WebRTC live call reliability (TURN credential refresh and reconnection).\nWeb app: develop new features and business logic with React and Python (FastAPI), and review and adjust UI to keep parity with mobile.\nPlan quarterly sprints with the team lead and test features across web, iOS and Android.",
+            "location": "Remote, Canada"
+        },
+        {
             "company": "Homepower SAS",
             "position": "Semi-Senior Frontend Developer",
             "startDate": "2025-11",
-            "endDate": "",
-            "isCurrent": true,
-            "description": "Semi-senior frontend developer, mainly responsible for creating UI component library for internal company use. Development of new features and user stories within company applications.",
+            "endDate": "2026-07",
+            "isCurrent": false,
+            "description": "Built an internal UI component library with StencilJS used across the company's applications.\nDeveloped new features and user stories in Angular 18+ applications within an Nx monorepo.\nWrote unit tests with Vitest and Jest using TypeScript.",
             "location": "Medellín, Colombia"
         },
         {
@@ -35,7 +44,7 @@
             "startDate": "2022-09",
             "endDate": "2025-07",
             "isCurrent": false,
-            "description": "Fullstack developer specialized in Vue Js v2 and v3, Typescript, Slim (PHP) and Node Js. Responsible for design and implementation of new features in Guvi (Security camera control and monitoring system), integration with WebSocket, WebRTC, Vee‑Validate and MQTT; distributed architecture with NFS; migration of control center from Vue Js 2 to Vue Js 3, SQL query optimization, Redis integration using AWS ElastiCache, MQTT; deployments on AWS (EC2). Visual redesign of main product SEIF. Angular version 18+, Nx for monorepo management, StencilJs, Vitest, Jest and Typescript.",
+            "description": "Designed and implemented new features for Guvi, a security camera control and monitoring system, using Vue.js, TypeScript, Slim (PHP) and Node.js.\nIntegrated real-time communication with WebSocket, WebRTC and MQTT.\nMigrated the control center from Vue.js 2 to Vue.js 3.\nOptimized SQL queries and integrated Redis using AWS ElastiCache; worked on a distributed architecture with NFS.\nDeployed services on AWS EC2 and led the visual redesign of the main product, SEIF.",
             "location": "Remote, Colombia"
         },
         {
@@ -44,7 +53,7 @@
             "startDate": "2021-09",
             "endDate": "2022-09",
             "isCurrent": false,
-            "description": "Frontend leader, development of web systems (Siprem GD, Lavado y Poda) for work order control for clients such as Air‑e; development with PHP, Vue Js, Node Js and MySQL.",
+            "description": "Led frontend development of web systems (Siprem GD, Lavado y Poda) for work order control for clients such as Air-e.\nDeveloped with PHP, Vue.js, Node.js and MySQL.",
             "location": "Montería, Colombia"
         },
         {
@@ -53,7 +62,7 @@
             "startDate": "2021-08",
             "endDate": "2021-10",
             "isCurrent": false,
-            "description": "Backend feature development in Node Js; frontend plugins for Twill CMS using Vue Js and Typescript.",
+            "description": "Developed backend features in Node.js.\nBuilt frontend plugins for Twill CMS using Vue.js and TypeScript.",
             "location": "Remote, Colombia"
         },
         {
@@ -62,7 +71,7 @@
             "startDate": "2020-12",
             "endDate": "2021-06",
             "isCurrent": false,
-            "description": "Creation of HTML pieces for email marketing (Massiv, Mailgun), backend features with Laravel; frontend maintenance with Vue Js v2; creation of advertising pieces with Adobe Illustrator and HTML.",
+            "description": "Built backend features with Laravel and maintained the Vue.js 2 frontend.\nCreated HTML email marketing templates (Massiv, Mailgun) and advertising pieces with Adobe Illustrator.",
             "location": "Remote, Colombia"
         },
         {
@@ -71,7 +80,7 @@
             "startDate": "2020-04",
             "endDate": "2021-03",
             "isCurrent": false,
-            "description": "Redesign of existing web views to improve UX and usability using Java, Spring Boot and Angular.",
+            "description": "Redesigned existing web views to improve UX and usability using Java, Spring Boot and Angular.",
             "location": "Medellín, Colombia"
         },
         {
@@ -80,7 +89,7 @@
             "startDate": "2020-01",
             "endDate": "2020-03",
             "isCurrent": false,
-            "description": "Frontend programming and API integration for web systems using JavaScript, Node Js, Electron.",
+            "description": "Developed frontend and API integrations for web and desktop systems using JavaScript, Node.js and Electron.",
             "location": "Bogotá, Colombia"
         },
         {
@@ -89,55 +98,60 @@
             "startDate": "2019-07",
             "endDate": "2019-12",
             "isCurrent": false,
-            "description": "Internal process automation and IT support, development with Java desktop and Vue Js with PHP.",
+            "description": "Automated internal processes and provided IT support; developed Java desktop applications and Vue.js/PHP web apps.",
             "location": "Montería, Colombia"
         }
     ],
     "skills": [
         {
-            "category": "Backend Development",
+            "category": "Frontend",
             "items": [
-                "PHP",
-                "Node Js",
+                "React",
+                "Vue.js",
+                "Angular",
+                "TypeScript",
+                "JavaScript",
+                "Pinia",
+                "Vuex",
+                "VeeValidate",
+                "StencilJS",
+                "Nx"
+            ]
+        },
+        {
+            "category": "Mobile",
+            "items": [
+                "React Native",
+                "Swift",
+                "iOS",
+                "Android"
+            ]
+        },
+        {
+            "category": "Backend",
+            "items": [
+                "Node.js",
                 "Express",
-                "Java",
                 "Python",
-                "C++",
+                "FastAPI",
+                "PHP",
                 "Laravel",
                 "Slim",
+                "Java",
                 "Spring Boot"
             ]
         },
         {
-            "category": "Frontend Development",
-            "items": [
-                "Vue Js",
-                "Vuex",
-                "Vue Router",
-                "Vue I18n",
-                "Vue Test Utils",
-                "Pinia",
-                "VeeValidate",
-                "Angular",
-                "React",
-                "Typescript",
-                "StencilJs",
-                "Nx",
-                "Vitest"
-            ]
-        },
-        {
-            "category": "Database",
+            "category": "Databases",
             "items": [
                 "MySQL",
                 "PostgreSQL",
                 "MongoDB",
-                "Redis",
-                "PostgreSQL"
+                "Redis"
             ]
         },
         {
-            "category": "Cloud AWS",
+            "category": "Cloud (AWS)",
             "items": [
                 "EC2",
                 "S3",
@@ -150,18 +164,25 @@
             ]
         },
         {
-            "category": "Others",
+            "category": "Testing",
+            "items": [
+                "Jest",
+                "Vitest",
+                "Vue Test Utils"
+            ]
+        },
+        {
+            "category": "Other",
             "items": [
                 "Git",
                 "Docker",
                 "Linux",
-                "Asterisk",
-                "MQTT",
-                "Web RTSP",
                 "WebSocket",
-                "Figma",
-                "Adobe Illustrator",
-                "Adobe Photoshop"
+                "WebRTC",
+                "MQTT",
+                "RTSP",
+                "Asterisk",
+                "Figma"
             ]
         }
     ],
@@ -176,6 +197,14 @@
         }
     ],
     "complementary": [
+        {
+            "title": "English for IT 1",
+            "institution": "Cisco Networking Academy",
+            "startDate": "2026-08",
+            "endDate": "2026-08",
+            "isCurrent": false,
+            "type": "Certification"
+        },
         {
             "title": "Angular de cero a experto",
             "institution": "Udemy",

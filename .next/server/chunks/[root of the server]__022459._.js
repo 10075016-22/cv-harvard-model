@@ -57,7 +57,7 @@ __turbopack_esm__({
     "GET": (()=>GET),
     "dynamic": (()=>dynamic)
 });
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/server.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$4_react$2d$dom$40$19$2e$3$2e$1_react$40$19$2e$3$2e$1_$5f$react$40$19$2e$3$2e$1$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/.pnpm/next@15.1.4_react-dom@19.3.1_react@19.3.1__react@19.3.1/node_modules/next/server.js [app-rsc] (ecmascript)");
 ;
 const contentType = "image/x-icon";
 const cacheControl = "public, max-age=0, must-revalidate";
@@ -66,7 +66,7 @@ if ("TURBOPACK compile-time falsy", 0) {
     "TURBOPACK unreachable";
 }
 function GET() {
-    return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["NextResponse"](buffer, {
+    return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$4_react$2d$dom$40$19$2e$3$2e$1_react$40$19$2e$3$2e$1_$5f$react$40$19$2e$3$2e$1$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["NextResponse"](buffer, {
         headers: {
             'Content-Type': contentType,
             'Cache-Control': cacheControl
