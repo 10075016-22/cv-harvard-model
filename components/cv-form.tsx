@@ -17,7 +17,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
 import { PlusCircle, Trash2, ArrowUp } from "lucide-react";
 
-import Thiago from '@/components/ThiagoEn.json'
+// import Thiago from '@/components/ThiagoEn.json'
 // import Thiago from '@/components/Thiago.json'
 
 const formSchema = z.object({
@@ -82,7 +82,7 @@ export type CVData = z.infer<typeof formSchema>;
 export function CVForm({ onSubmit, initialData }: { onSubmit: (data: CVData) => void; initialData?: CVData }) {
   const form = useForm<CVData>({
     resolver: zodResolver(formSchema),
-    defaultValues: Thiago || initialData || {
+    defaultValues: initialData || {
       personalInfo: {
         name: "",
         title: "",
